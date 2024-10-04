@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service At Doorstep</title>
     <base href=" https://sahil-8440.github.io/SErviceAtDoorstep/">
+    <title>Service At Doorstep</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -32,29 +32,29 @@
             background-size: cover;
             color: black;
             text-align: center;
-            padding: 80px 20px;
+            padding: 60px 20px; /* Adjusted padding for better mobile view */
         }
         .hero h1 {
-            font-size: 2.5em;
+            font-size: 2em; /* Reduced size for mobile */
             margin: 0;
         }
         .hero p {
-            font-size: 1.2em;
+            font-size: 1em; /* Reduced size for mobile */
             margin-top: 10px;
         }
         .container {
             width: 90%;
             margin: auto;
             overflow: hidden;
-            padding: 20px;
+            padding: 20px 0; /* Added vertical padding */
         }
         .services {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between; /* Changed for better spacing */
             flex-wrap: wrap;
         }
         .service {
-            background: #64ce81  ;
+            background: #64ce81;
             border-radius: 10px;
             margin: 10px;
             padding: 20px;
@@ -62,6 +62,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s;
             text-align: center;
+            min-width: 180px; /* Minimum width for small screens */
         }
         .service img {
             width: 80px;
@@ -83,66 +84,47 @@
             margin-top: 20px;
         }
         @media (max-width: 768px) {
-            .services {
+            nav {
+                display: flex;
                 flex-direction: column;
                 align-items: center;
             }
+            .hero {
+                padding: 40px 20px; /* Adjusted padding for mobile */
+            }
+            .hero h1 {
+                font-size: 1.8em; /* Smaller font size for mobile */
+            }
+            .services {
+                flex-direction: column; /* Stack services vertically */
+                align-items: center;
+            }
         }
-
-
-
-
-
-
-
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Center items horizontally */
-            justify-content: center; /* Center items vertically */
-            height: 100vh; /* Full height of the viewport */
-            background-color: #f5f5f5; /* Light background color */
-        }
-
         .image-container {
             display: flex;
-            align-items: center; /* Center items vertically */
-            background-color: white; /* Background for the container */
-            padding: 20px; /* Padding around the container */
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            justify-content: center; /* Center the image container */
+            background-color: white; 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-
         .styled-image {
-            width: 200px; /* Set the width of the image */
-            height: auto; /* Keep aspect ratio */
-            margin-right: 15px; /* Space between the image and text */
-            border-radius: 50px; /* Rounded corners for the image */
+            width: 150px; /* Adjusted width for mobile */
+            height: auto;
+            margin-right: 15px; 
+            border-radius: 50%;
         }
-
         .image-text {
-            font-size: 18px; /* Font size for the text */
-            color: #333; /* Dark text color */
+            font-size: 16px; /* Smaller font size for mobile */
+            color: #333;
         }
-
-
-
-
-
     </style>
 </head>
 <body>
     <header>
-
-
-
- <div class="image-container">
-        <img src="https://image.slidesharecdn.com/doorstepservices-170118171024/85/Doorstep-services-1-320.jpg" class="styled-image">
-           </div>
-
-
-
+        <div class="image-container">
+            <img src="https://image.slidesharecdn.com/doorstepservices-170118171024/85/Doorstep-services-1-320.jpg" class="styled-image" alt="Service Image">
+        </div>
         <h1>Service At Doorstep</h1>
         <nav>
             <a href="#services">Our Services</a>
@@ -155,6 +137,7 @@
         <h1>Your Trusted Services</h1>
         <p>Convenience and quality at your doorstep!</p>
     </div>
+    
     <div class="container">
         <section id="services">
             <h2>Our Services</h2>
@@ -189,20 +172,19 @@
                     <h3>Painting Service</h3>
                     <p>Effective Paint management solutions for a safe home.</p>
                 </div>
-
             </div>
         </section>
 
         <section id="about">
             <h1>About Us</h1>
-            <p><h3>We are dedicated to providing top-notch services right at your doorstep. Our team of professionals is trained to meet your needs, ensuring satisfaction every time.</h3></p>
+            <p>We are dedicated to providing top-notch services right at your doorstep. Our team of professionals is trained to meet your needs, ensuring satisfaction every time.</p>
         </section>
 
         <section id="contact">
             <h1>Contact Us</h1>
-            <p><h3><i>If you have any questions or would like to schedule a service, please reach out:<i></h3></p>
-            <p><h3>Email: <a href="mailto:sahil.jabade@gmail.com">sahil.jabade@gmail.com</a></h3></p>
-            <p><h3>Phone: <a href="tel:+7769847457">+91 7769847457</a></h3></p>
+            <p>If you have any questions or would like to schedule a service, please reach out:</p>
+            <p>Email: <a href="mailto:sahil.jabade@gmail.com">sahil.jabade@gmail.com</a></p>
+            <p>Phone: <a href="tel:+7769847457">+91 7769847457</a></p>
         </section>
     </div>
 
